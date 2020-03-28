@@ -1,0 +1,35 @@
+body {
+    background: url("");
+    font-family:'Roboto', sans-serif;
+}
+
+#brand {
+    font-size: 1.745rem;
+    font-family: 'Staatliches', cursive;
+}
+
+.nav-link {
+    font-size: 1.25rem;
+}
+
+.content {
+    flex: auto;
+    background-color: red;
+    justify-content: space-between;
+    max-height: 89vh;
+    overflow: auto;
+    padding-top: 2.5vh;
+}
+
+.card {
+    margin-bottom: 2.5vh;
+}
+
+.page-footer {
+    background-color: #181818;
+    color: white;
+}
+
+.card-text {
+    font-size: .9em;
+}
