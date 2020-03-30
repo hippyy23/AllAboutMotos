@@ -1,5 +1,6 @@
 <?php require_once('config.php') ?>
 <?php require_once('includes/functions.php') ?>
+
 <!-- head_section -->
 <?php include('includes/head_section.php') ?>
 

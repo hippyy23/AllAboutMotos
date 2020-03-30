@@ -24,12 +24,29 @@
                 </li>
             </ul>
             <ul class="navbar-nav ml-auto">
+
+            <?php if (isset($_SESSION['user']['username'])) { ?>
+
                 <li class="nav-item">
-                    <a class="nav-link" href="#">LOGIN</a>
+                    <span style="pointer-events: none;" class="nav-link">Welcome <?php echo $_SESSION['user']['username'] ?> </span>
                 </li>
+
                 <li class="nav-item">
-                    <a class="nav-link" href="#">SIGN UP</a>
+                    <a class="nav-link" href="logout.php">LOGOUT</a>
                 </li>
+
+            <?php } else { ?>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="login.php">LOGIN</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="registration.php">SIGN UP</a>
+                </li>
+
+            <?php } ?>
+
             </ul>
         </div>
     </nav>
