@@ -46,21 +46,21 @@
 
             </div>
         </div>
-        <div class="row justify-content-center">
-            <div class="col-6">
-                <div class="alert alert-danger text-center">
-                    <?php 
+        <?php if (isset($_SESSION["signup"]) && !empty($_SESSION["signup"])) { ?>
+            <div class="row justify-content-center">
+                <div class="col-6">
+                    <div class="alert alert-danger text-center">
+                        <?php 
 
-                        if (isset($_SESSION["message"]) && !empty($_SESSION["message"])) {
-                            $msg = $_SESSION["message"];
+                            $msg = $_SESSION["signup"];
                             echo $msg ;
-                            unset($_SESSION['message']);
-                        }
-
-                    ?>
+                            unset($_SESSION['signup']);
+    
+                        ?>
+                    </div>
                 </div>
             </div>
-        </div>
+        <?php } ?>
     </div>
 
     <?php include('includes/footer.php') ?>

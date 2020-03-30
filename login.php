@@ -33,21 +33,19 @@
                 </form>
             </div>
         </div>
-        <div class="row justify-content-center">
-            <div class="col-6">
-                <div class="alert alert-danger text-center">
-                    <?php 
-
-                        if (isset($_SESSION["message"]) && !empty($_SESSION["message"])) {
-                            $msg = $_SESSION["message"];
+        <?php if (isset($_SESSION["login"]) && !empty($_SESSION["login"])) { ?>
+            <div class="row justify-content-center">
+                <div class="col-6">
+                    <div class="alert alert-danger text-center">
+                        <?php 
+                            $msg = $_SESSION["login"];
                             echo $msg ;
-                            unset($_SESSION['message']);
-                        }
-
-                    ?>
+                            unset($_SESSION['login']);
+                        ?>
+                    </div>
                 </div>
             </div>
-        </div>
+        <?php } ?>
     </div>
 
     <?php include('includes/footer.php') ?>

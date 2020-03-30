@@ -27,11 +27,11 @@
             $user = mysqli_fetch_assoc($result);
             if ($user['username'] === $username) {
                 array_push($errors, "Username already taken!");
-                $_SESSION['message'] = "Username already taken!";
+                $_SESSION['signup'] = "Username already taken!";
             }
             if ($user['email'] === $email) {
                 array_push($errors, "Email already in use!");
-                $_SESSION['message'] = "Email already in use!";
+                $_SESSION['singup'] = "Email already in use!";
             }
         } else {
             $password = md5($password);
@@ -90,7 +90,7 @@
                 exit(0);
             }
         } else {
-            $_SESSION['message'] = "Wrong credentials";
+            $_SESSION['login'] = "Wrong credentials";
         }
     }
 
