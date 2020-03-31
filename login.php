@@ -1,3 +1,10 @@
+<?php 
+
+    error_reporting(0);
+    ini_set('display_errors', 0);
+
+?>
+
 <?php include('config.php') ?>
 <?php include('includes/registration_login.php') ?>
 <?php include('includes/head_section.php'); ?>

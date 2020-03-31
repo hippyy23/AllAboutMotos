@@ -1,6 +1,13 @@
 <?php require_once('config.php') ?>
 <?php require_once('includes/functions.php') ?>
 
+<?php 
+
+    error_reporting(0);
+    ini_set('display_errors', 0);
+
+?>
+
 <!-- head_section -->
 <?php include('includes/head_section.php') ?>
 
