@@ -25,15 +25,10 @@
                 
                 <form class="text-center p-5" action="registration.php" method="POST">
                     
-                    <div class="from-row mb-4">
-                        <div class="col mb-4">
-                            <input type="text" class="form-control" placeholder="First name" name="fname" required>
-                        </div>
-                        <div class="col mb-4">
-                        <input type="text" class="form-control" placeholder="Last name" name="lname" required>
-                        </div>
-                    </div>
-                    
+                    <input type="text" class="form-control mb-4" placeholder="First name" name="fname" required>
+                        
+                    <input type="text" class="form-control mb-4" placeholder="Last name" name="lname" required>
+
                     <input type="email" class="form-control mb-4" placeholder="E-mail" name="email" required>
 
                     <input type="text" class="form-control mb-4" placeholder="Username" name="username" required>

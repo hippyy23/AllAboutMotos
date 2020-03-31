@@ -31,7 +31,7 @@
             }
             if ($user['email'] === $email) {
                 array_push($errors, "Email already in use!");
-                $_SESSION['singup'] = "Email already in use!";
+                $_SESSION['signup'] = "Email already in use!";
             }
         } else {
             $password = md5($password);

@@ -48,5 +48,5 @@
     <!-- footer -->
     <?php include('includes/footer.php') ?>
 
-  </body>
+    </body>
 </html>
